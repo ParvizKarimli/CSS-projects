@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Border Images</title>
+<style>
+p.repeated {
+	border: 10px solid transparent;
+	border-image: url('border.png') 30 round;
+	-webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
+	-o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
+}
+
+p.stretched {
+	border: 10px solid transparent;
+	border-image: url('border.png') 30 stretch;
+	-webkit-border-image: url(border.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(border.png) 30 stretch; /* Opera 11-12.1 */
+}
+</style>
+</head>
+<body>
+
+<h1>The border-image property specifies an image to be used 
+as the border around an element.</h1>
+
+<p class="repeated">
+Here, the middle sections of the image are repeated to create the border.
+</p>
+
+<p class="stretched">
+Here, the middle sections of the image are stretched to create the border.
+</p>
+
+</body>
+</html>

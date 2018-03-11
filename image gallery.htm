@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Image Gallery</title>
+<link rel="icon" href="dragon.ico"/>
+<style>
+div.pic {
+	border: solid 2px #ccc;
+	width: 300px;
+	float: left;
+	margin: 5px;
+}
+
+div.pic:hover {
+	border: solid 2px #777;
+}
+
+div.pic img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="pic">
+  <a href="img_fjords.jpg" target="_blank">
+    <img src="img_fjords.jpg" height="200" width="300" alt="fjords"/>
+  </a>
+  <div class="desc">This is fjords</div>
+</div>
+
+<div class="pic">
+  <a href="img_mountains.jpg" target="_blank">
+    <img src="img_mountains.jpg" height="200" width="300" alt="mounts"/>
+  </a>
+  <div class="desc">This is mounts</div>
+</div>
+
+<div class="pic">
+  <a href="img_lights.jpg" target="_blank">
+    <img src="img_lights.jpg" height="200" width="300" alt="lights"/>
+  </a>
+  <div class="desc">This is lights</div>
+</div>
+
+</body>
+</html>

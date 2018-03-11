@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Tooltip</title>
+<style>
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	margin: 50px;
+}
+
+.tooltiptext {
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;
+	visibility: hidden;
+	background-color: black;
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;
+	width: 120px;
+	border-radius: 6px;
+}
+
+.tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+body {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+</body>
+</html>

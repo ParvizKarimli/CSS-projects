@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Gradients</title>
+<style>
+div {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+div::before {
+	content: "red to yellow: ";
+}
+
+#grad1 {
+	height: 200px;
+	background: linear-gradient(to bottom, red, yellow); /* default */
+}
+
+#grad2 {
+	height: 200px;
+	background: linear-gradient(to top, red, yellow);
+}
+
+#grad3 {
+	height: 200px;
+	background: linear-gradient(to right, red, yellow);
+}
+
+#grad4 {
+	height: 200px;
+	background: linear-gradient(to left, red, yellow);
+}
+
+#grad5 {
+	height: 200px;
+	background: linear-gradient(to bottom right, red, yellow);
+}
+
+#grad6 {
+	height: 200px;
+	background: linear-gradient(to bottom left, red, yellow);
+}
+
+#grad7 {
+	height: 200px;
+	background: linear-gradient(to top right, red, yellow);
+}
+
+#grad8 {
+	height: 200px;
+	background: linear-gradient(to top left, red, yellow);
+}
+
+#grad9 {
+	height: 200px;
+	background: linear-gradient(0deg, red, yellow);
+}
+
+#grad10 {
+	height: 200px;
+	background: linear-gradient(90deg, red, yellow);
+}
+
+#grad11 {
+	height: 200px;
+	background: linear-gradient(180deg, red, yellow);
+}
+
+#grad12 {
+	height: 200px;
+	background: linear-gradient(-90deg, red, yellow);
+}
+
+#grad13 {
+	height: 200px;
+	background: linear-gradient(red, yellow, green);
+}
+
+#grad13::before {
+	content: "Muliple color stops (red, yellow green)";
+}
+
+#grad14 {
+	height: 200px;
+	background: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+#grad14::before {
+	content: "Transparency (shades of red)";
+}
+
+#grad15 {
+	height: 200px;
+	background: repeating-linear-gradient(red 10%, yellow 20%);
+}
+
+#grad15::before {
+	content: "Repeating linear gradient (red to yellow)";
+}
+
+
+#grad16 {
+	height: 200px;
+	background: radial-gradient(ellipse, red 20%, yellow 35%);
+}
+
+#grad16::before {
+	content: "Radial gradient (shape: ellipse (default))";
+}
+
+#grad17 {
+	height: 200px;
+	background: radial-gradient(circle, red 20%, yellow 35%);
+}
+
+#grad17::before {
+	content: "Radial gradient (shape: circle)";
+}
+
+#grad18 {
+	height: 200px;
+	background: radial-gradient(farthest-corner at 60% 55%, red 20%, yellow 35%);
+}
+
+#grad18::before {
+	content: "Radial gradient (size keyword: farthest-corner (default))";
+}
+
+#grad19 {
+	height: 200px;
+	background: radial-gradient(farthest-side at 60% 55%, red 20%, yellow 35%);
+}
+
+#grad19::before {
+	content: "Radial gradient (size keyword: farthest-side)";
+}
+
+#grad20 {
+	height: 200px;
+	background: radial-gradient(closest-corner at 60% 55%, red 20%, yellow 35%);
+}
+
+#grad20::before {
+	content: "Radial gradient (size keyword: closest-corner)";
+}
+
+#grad21 {
+	height: 200px;
+	background: radial-gradient(closest-side at 60% 55%, red 20%, yellow 35%);
+}
+
+#grad21::before {
+	content: "Radial gradient (size keyword: closest-side)";
+}
+
+#grad22 {
+	height: 200px;
+	background: repeating-radial-gradient(red 10%, yellow 15%);
+}
+
+#grad22::before {
+	content: "repeating radial gradient (red to yellow)"
+}
+</style>
+</head>
+<body>
+
+<div id="grad1">top to bottom (default)</div><hr/>
+<div id="grad2">bottom to top</div><hr/>
+<div id="grad3">left to right</div><hr/>
+<div id="grad4">right to left</div><hr/>
+<div id="grad5">top left to bottom right</div><hr/>
+<div id="grad6">top right to bottom left</div><hr/>
+<div id="grad7">bottom left to top right</div><hr/>
+<div id="grad8">bottom right to top left</div><hr/>
+<div id="grad9">0 degree: bottom to top</div><hr/>
+<div id="grad10">90 degree: left to right</div><hr/>
+<div id="grad11">180 degree: top to bottom</div><hr/>
+<div id="grad12">-90 degree: right to left</div><hr/>
+<div id="grad13"></div><hr/>
+<div id="grad14"></div><hr/>
+<div id="grad15"></div><hr/>
+
+<div id="grad16"></div><hr/>
+<div id="grad17"></div><hr/>
+<div id="grad18"></div><hr/>
+<div id="grad19"></div><hr/>
+<div id="grad20"></div><hr/>
+<div id="grad21"></div><hr/>
+<div id="grad22"></div><hr/>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Text Effects</title>
+<style>
+p.clip, p.ellipsis {
+	width: 180px;
+	border: 1px solid black;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+p.clip:hover, p.ellipsis:hover {
+	overflow:visible;
+}
+
+p.clip {
+	text-overflow: clip; /* default */
+}
+
+p.ellipsis {
+	text-overflow: ellipsis;
+}
+
+p.wrap {
+	width: 200px;
+	border: 1px solid black;
+	word-wrap: break-word;
+}
+
+p.keepall, p.breakall {
+	width: 200px;
+	border: 1px solid black;
+}
+
+p.keepall {
+	word-break: keep-all; /* Default. Only break at hyphens */
+}
+
+p.breakall {
+	word-break: break-all; /* Break at any character */
+}
+</style>
+</head>
+<body>
+
+<p class="clip">This is some text that will not fit in the box.</p>
+<p class="ellipsis">This is some long text that will not fit in the box.</p>
+
+<p class="wrap">
+This paragraph contains a very long word: 
+thisisaveryveryveryveryveryverylongword. 
+The long word will break and wrap to the next line.
+</p>
+
+<p class="keepall">This is a paragraph. 
+thisisaveryveryveryveryveryverylongword.
+This is a paragraph. 
+thisisaveryveryveryvery-veryverylongword.</p>
+<p class="breakall">This is a paragraph. 
+thisisaveryveryveryveryveryverylongword.
+This is a paragraph. 
+thisisaveryveryveryveryveryverylongword.</p>
+
+</body>
+</html>

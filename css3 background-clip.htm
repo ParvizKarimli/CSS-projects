@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>background-clip property</title>
+<style>
+div {
+	background-color: yellow;
+	color: red;
+	border: 10px dotted navy;
+	padding: 25px;
+}
+
+.one {
+	background-clip: border-box; /* default */
+}
+
+.two {
+	background-clip: padding-box;
+}
+
+.three {
+	background-clip: content-box;
+}
+</style>
+</head>
+<body>
+
+<div class="one">
+<h1>This is a heading.</h1>
+<p>
+This is a paragraph. This is a paragraph. This is a paragraph. 
+This is a paragraph. This is a paragraph. This is a paragraph. 
+This is a paragraph. This is a paragraph. This is a paragraph. 
+This is a paragraph. This is a paragraph. This is a paragraph. 
+</p>
+</div><hr/>
+
+<div class="two">
+<h1>This is a heading.</h1>
+<p>
+This is a paragraph. This is a paragraph. This is a paragraph. 
+This is a paragraph. This is a paragraph. This is a paragraph. 
+This is a paragraph. This is a paragraph. This is a paragraph. 
+This is a paragraph. This is a paragraph. This is a paragraph. 
+</p>
+</div><hr/>
+
+<div class="three">
+<h1>This is a heading.</h1>
+<p>
+This is a paragraph. This is a paragraph. This is a paragraph. 
+This is a paragraph. This is a paragraph. This is a paragraph. 
+This is a paragraph. This is a paragraph. This is a paragraph. 
+This is a paragraph. This is a paragraph. This is a paragraph. 
+</p>
+</div>
+
+</body>
+</html>
